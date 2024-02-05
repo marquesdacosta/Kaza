@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 100px;
+    height: 68px;
+    .navbar {
+            display: flex;
+            align-items: center;
+            gap: 57px;
+            font-size: 24px;
+            font-family: 'Montserrat';
+            font-weight: 500;
+        }
+    img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1023px) {
+    header {
+        height: 47px;
+        .navbar {
+                display: flex;
+                align-items: center;
+                gap: 57px;
+                font-size: 18px;
+            }
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        margin: 22px 20px;
+        .navbar {
+            gap: 26px;
+            font-size: 12px;
+        }
+    }
+}

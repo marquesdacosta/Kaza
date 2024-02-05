@@ -1,0 +1,33 @@
+footer {
+    background-color: #000000;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 50px;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+        p {
+            color: white;
+            font-size: 24px;
+            font-family: 'Montserrat';
+            font-weight: 500;
+        }
+        img {
+            width: 122px;
+            height: 39.44px;
+        }
+}
+
+@media (max-width: 767px) {
+    footer {
+        gap: 20px;
+        padding-bottom: 60px;
+            p {
+                font-size: 12px;
+                width: 133px;
+                text-align: center;
+            }
+    }
+}
