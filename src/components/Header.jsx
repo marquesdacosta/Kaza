@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/header.scss';
 import logo from '../assets/logoHeader.png';
 
@@ -7,10 +8,10 @@ function Header(){
             <div>
         <img src={logo} alt="logo" />
             </div>
-            <div className='navbar'>
-        <p>Accueil</p>
-        <p>A propos</p>
-            </div>
+            <nav className='navbar'>
+                <Link to="/">Accueil</Link>
+                <Link to="/a-propos">A Propos</Link>
+            </nav>
         </header>
     )
 }
