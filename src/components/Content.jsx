@@ -1,12 +1,16 @@
 import '../styles/content.scss';
+import React from 'react';
 import Card from './Card';
+import logements from '../../datas/logements.json';
 
 function Content(){
     return (
         <section className='content'>
-            <Card />
+            {logements.map(logement => (
+                <Card key={logement.id} logement={logement} />
+            ))}
         </section>
-    )
+    );
 }
 
-export default Content
+export default Content;

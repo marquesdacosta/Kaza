@@ -7,6 +7,7 @@ import Erreur from '../pages/erreur.jsx';
 import APropos from '../pages/a-propos.jsx';
 import FicheLogement from '../pages/fiche-logement.jsx';
 
+
 function AppRouter() {
     return (
 <Router>
@@ -15,6 +16,7 @@ function AppRouter() {
             <Route path="/" element={<Accueil />} />
             <Route path="/a-propos" element={<APropos />} />
             <Route path="*" element={<Erreur />}></Route>
+            <Route path="/logement/:id" element={<FicheLogement />} />
         </Routes>
       <Footer/>
 </Router>
