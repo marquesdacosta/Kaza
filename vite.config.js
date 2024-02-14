@@ -5,6 +5,7 @@ import path from 'path'; // Importez path
 
 export default defineConfig({
   plugins: [react()],
+  base: "/Kaza/",
   resolve: {
     alias: {
       '@components': path.resolve(__dirname, 'src/components'), // Alias pour le dossier des composants
