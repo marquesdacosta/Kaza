@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
-import Banner from '../components/Banner';
-import Content from '../components/Content';
+import Banner from '@components/Banner';
+import Content from '@components/Content';
 import banner from '../assets/banner.png';
+import logements from '@datas/logements.json';
 
 function Accueil() {
     const [selectedLogementId, setSelectedLogementId] = useState(null);
 
-    const handleLogementClick = (logementId) => {
-        setSelectedLogementId(logementId);
-    };
+    // selectedLogementId = stock l'id du logement cliqué 
+    // setselectedLogementId = met a jour la valeur selectedLogementId
+
+    function LogementClick(logementId) { // fonction qui permet de mettre a jour l'ID lorsqu'on clique sur une card (logement)
+    setSelectedLogementId(logementId); 
+}
 
     return (
         <main>
             <Banner imageUrl={banner} showTitle={true}/>
-            <Content onLogementClick={handleLogementClick} />
+            <Content onClick={LogementClick} />
         </main>
     );
 }

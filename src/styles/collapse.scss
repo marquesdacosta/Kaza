@@ -1,5 +1,4 @@
 .collapse {
-    margin: 0 100px;
     &__title {
         display: flex;
         align-items: center;
@@ -53,6 +52,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 0 100px;
 }
 
 @media (max-width: 1023px){
@@ -68,6 +68,7 @@
     .bloc-collapse {
         gap: 20px;
         margin: 20px 20px;
+        padding: 0;
         .collapse{
             margin: 0 0 ;
             &__title {

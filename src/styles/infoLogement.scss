@@ -1,0 +1,77 @@
+.info_logement {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 100px 50px 100px;
+    flex-direction: column;
+    gap: 30px;
+    .info_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+        .info_title {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h2 {
+                    font-family: Montserrat;
+                    font-size: 36px;
+                    font-weight: 500;
+                    color: #FF6060;;
+                }
+                p {
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #000000;;
+                }
+        }
+        .info_host {
+                display: flex;
+                align-items: center;
+                width: 15%;
+                gap: 10px;
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+                p {
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #FF6060;
+                    text-align: right;
+                }
+        }
+    }
+    .tags_rating {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .rating {
+                display: flex;
+                gap: 10px;
+            }
+            .tags {
+                display: flex;
+                gap: 10px;
+                .tag {
+                    align-items: center;
+                    display: flex;
+                    background-color: #FF6060;
+                    border-radius: 10px;
+                    padding: 0px 34px;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 700;
+                    height: 25px;
+                    color: white;
+                }
+            }
+    }
+    .desc_equip {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+    }
+}

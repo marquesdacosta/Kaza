@@ -1,11 +1,10 @@
-import Collapse from "./Collapse";
-import text from '../../datas/texte_a_propos.json';
+import Collapse from "@components/Collapse";
 
-function BlocCollapse() {
+function BlocCollapse({ props }) {
     return (
         <section className="bloc-collapse">
-            {text.map(text => (
-                <Collapse title={text.title} description={text.description} key={text.title}/>
+            {props.map((item, index) => (
+                <Collapse title={item.title} description={item.description} key={index} />
             ))}
         </section>
     );

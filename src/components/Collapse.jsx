@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import arrow from '../assets/arrow.png';
-import '../styles/collapse.scss'; 
+import '@styles/collapse.scss'; 
 
 
 function Collapse(props) {
@@ -12,7 +12,7 @@ function Collapse(props) {
   };
 
     return (
-            <div key={props.title} className='collapse'>
+            <div key={props.title} className='collapse' style={props.customStyle}>
                 <div className='collapse__title'>
                     <h2>{props.title}</h2>
                     <div><img src={arrow} alt="arrow" className={isCollapsed ? 'arrow' : 'arrow_show'} onClick={toggleCollapse}/></div>
