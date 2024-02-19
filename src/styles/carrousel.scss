@@ -9,17 +9,50 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 .arrow_right {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 .fiche_logement {
     margin: 0 100px;
 }
 .carrousel {
     position: relative;
+    div {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        color: white;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+    }
 }
 
+@media (max-width: 1023px) {
+    .fiche_logement {
+        margin: 0 50px;
+        }
+    .arrow_left {
+        width: 10%;
+        }   
+        .arrow_right {
+        width: 10%;
+        }
+}
+
+@media (max-width: 767px) {
+    .fiche_logement {
+        margin: 0 20px;
+        .carrousel {
+            .current_img {
+                height: 255px;
+            }
+        }
+    }
+}

@@ -4,11 +4,15 @@
     margin: 30px 100px 50px 100px;
     flex-direction: column;
     gap: 30px;
-    .info_head {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-        .info_title {
+    .InfoHostTitleRatingTags {
+        display: flex;
+        justify-content: space-between;
+        .InfoTitleTag {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            .info_title {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -16,45 +20,19 @@
                     font-family: Montserrat;
                     font-size: 36px;
                     font-weight: 500;
-                    color: #FF6060;;
-                }
-                p {
-                    font-family: Montserrat;
-                    font-size: 18px;
-                    font-weight: 500;
-                    color: #000000;;
-                }
-        }
-        .info_host {
-                display: flex;
-                align-items: center;
-                width: 15%;
-                gap: 10px;
-                img {
-                    width: 64px;
-                    height: 64px;
-                    border-radius: 50%;
-                }
-                p {
-                    font-family: Montserrat;
-                    font-size: 18px;
-                    font-weight: 500;
                     color: #FF6060;
-                    text-align: right;
                 }
-        }
-    }
-    .tags_rating {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .rating {
-                display: flex;
-                gap: 10px;
+                p {
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #000000;
+                }
             }
             .tags {
                 display: flex;
                 gap: 10px;
+                flex-wrap: wrap;
                 .tag {
                     align-items: center;
                     display: flex;
@@ -68,10 +46,124 @@
                     color: white;
                 }
             }
+        }
+        .rating_host {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            .rating {
+                display: flex;
+                gap: 15px;
+                justify-content: end;
+            }
+            .info_host {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                max-width: 220px;
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+                p {
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #FF6060;
+                    text-align: right;
+                }
+            }
+        }
     }
     .desc_equip {
             display: flex;
             justify-content: space-between;
             width: 100%;
+            .collapse {
+                width: 45%;
+                .collapse__title {
+                    h2 {
+                        font-size: 18px;
+                        }
+                    }
+            }
+    }
+}
+
+@media (max-width: 1023px) {
+    .info_logement {
+        margin: 30px 50px 50px 50px;
+        .InfoHostTitleRatingTags {
+            flex-direction: column;
+            gap: 20px;
+            .rating_host {
+                flex-direction: row;
+                align-items: center;
+                .info_host {
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .info_logement {
+        margin: 30px 20px 50px 20px;
+        .InfoHostTitleRatingTags {
+            .InfoTitleTag {
+                .info_title {
+                    h2 {
+                        font-size: 18px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .tags {
+                    .tag {
+                        font-size: 10px;
+                    }
+                }
+            }
+            .rating_host {
+                .rating {
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+                .info_host {
+                    max-width: 150px;
+                    p {
+                        font-size: 12px;
+                    }
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+        .desc_equip {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            .collapse {
+                width: 100%;
+                .collapse__title {
+                    h2 {
+                        font-size: 13px;
+                    }
+                    img {
+                        width: 16px;
+                        height: 9px;
+                    }
+                }
+                .collapse__text {
+                    font-size: 10px;
+                }
+            }
+        }
     }
 }

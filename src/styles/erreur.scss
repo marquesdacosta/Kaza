@@ -27,3 +27,28 @@
         color: black;
     }
 }
+
+@media (max-width: 1023px) {
+    .main-erreur {
+        .code-erreur {
+            font-size: 200px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main-erreur {
+        .code-erreur {
+            font-size: 96px;
+        }
+        p {
+            font-size: 18px;
+        }
+        a {
+            font-size: 14px;
+        }
+    }
+}

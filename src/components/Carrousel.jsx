@@ -35,6 +35,7 @@ function prevImage(){
         <img src={arrow_left} alt="arrow_left" className='arrow_left' onClick={prevImage} />
         <img src={arrow_right} alt="arrow_right" className='arrow_right' onClick={nextImage}/>
           <img src={props.pictures[currentImage]} alt={`Image ${currentImage + 1}`} className='current_img'/>
+          <div>{currentImage + 1}/{props.pictures.length}</div>
         </div>
     </div>
   );

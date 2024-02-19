@@ -12,8 +12,8 @@ function DescEquip({ title1, title2, description, equipments }) {
 
     return (
         <div className='desc_equip'>
-            <Collapse title={title1} description={description} customStyle={{width : '45%'}} />
-            <Collapse title={title2} description={breakEquipments()} customStyle={{width : '45%'}} />
+            <Collapse title={title1} description={description} />
+            <Collapse title={title2} description={breakEquipments()} />
         </div>
     );
 }
