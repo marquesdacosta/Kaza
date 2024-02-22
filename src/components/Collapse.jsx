@@ -12,7 +12,7 @@ function Collapse(props) {
   };
 
     return (
-            <div key={props.title} className='collapse' style={props.customStyle}>
+            <div key={props.title} className='collapse'>
                 <div className='collapse__title'>
                     <h2>{props.title}</h2>
                     <div><img src={arrow} alt="arrow" className={isCollapsed ? 'arrow' : 'arrow_show'} onClick={toggleCollapse}/></div>

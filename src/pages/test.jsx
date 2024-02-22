@@ -5,7 +5,6 @@ import Tags from "@components/Tags"
 import InfoTitle from "../components/InfoTitle"
 import etoile from "../assets/etoile_pleine.png"
 import InfoHost from "../components/InfoHost"
-import InfoHead from "../components/InfoHead"
 import InfoLogement from "../components/InfoLogement"
 import DescEquip from "@components/DescEquip"
 import Collapse from "../components/Collapse"
@@ -35,7 +34,6 @@ function Test() {
             <TagsRating rating={5} tags={tags}/>
             <InfoTitle title={'titre'} location={'location'} />
             <InfoHost name={'lenom'} picture={etoile}/>
-            <InfoHead title={'blabla'} location={'aupif'} name={'dupond'} picture={etoile}/>
             <DescEquip title1={'titre1'} title2={'titre2'} description={'desc'} equipments={['equip1', 'equip2', 'equip3']}/>
             <InfoLogement                 
                 title={'logementData.title'}

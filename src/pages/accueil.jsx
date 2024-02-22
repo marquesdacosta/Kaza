@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Banner from '@components/Banner';
 import Content from '@components/Content';
 import banner from '../assets/banner.png';
-import logements from '@datas/logements.json';
 
 function Accueil() {
     const [selectedLogementId, setSelectedLogementId] = useState(null);
