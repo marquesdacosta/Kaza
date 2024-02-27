@@ -1,10 +1,11 @@
 import React from 'react';
+import Tag from '@components/Tag';
 
 function Tags({ tags }) {
     return (
         <div className='tags'>
             {tags.map((tag, index) => (
-                <p key={index} className="tag">{tag}</p>
+                <Tag key={index} tag={tag} />
             ))}
         </div>
     );
